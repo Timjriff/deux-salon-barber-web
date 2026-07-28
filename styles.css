@@ -263,8 +263,8 @@ h1 em {
 .hero-visual {
   align-items: center;
   background:
-    radial-gradient(circle at 50% 42%, rgba(255,255,255,0.95), transparent 52%),
-    linear-gradient(145deg, #f7faff, #c8dbf3);
+    linear-gradient(90deg, rgba(32, 62, 115, 0.04), rgba(32, 62, 115, 0.1)),
+    url("deux-salon-hero.png") center center / cover no-repeat;
   display: flex;
   justify-content: center;
   min-height: 660px;
@@ -282,6 +282,10 @@ h1 em {
   padding: 52px 42px 36px;
   position: relative;
   width: 82%;
+}
+
+.hero-visual .logo-stage {
+  display: none;
 }
 
 .logo-stage::before,
@@ -340,7 +344,8 @@ h1 em {
 
 .visual-caption {
   bottom: 32px;
-  color: var(--ink);
+  color: #ffffff;
+  text-shadow: 0 1px 16px rgba(18, 38, 72, 0.58);
   font-size: 0.61rem;
   letter-spacing: 0.18em;
   margin: 0;
