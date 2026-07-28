@@ -905,3 +905,218 @@ footer {
     transition-duration: 0.01ms !important;
   }
 }
+
+@media (max-width: 640px) {
+  html {
+    scroll-padding-top: 68px;
+  }
+
+  body {
+    overflow-x: hidden;
+    padding-bottom: calc(72px + env(safe-area-inset-bottom));
+  }
+
+  .site-header {
+    grid-template-columns: minmax(0, 1fr) auto;
+    min-height: 68px;
+    padding: 0 16px;
+  }
+
+  .brand-logo-frame {
+    height: 46px;
+    width: 118px;
+  }
+
+  .brand-logo-frame img {
+    top: -32px;
+    width: 118px;
+  }
+
+  .header-cta {
+    min-height: 40px;
+    padding: 0 17px;
+  }
+
+  .header-cta {
+    font-size: 0;
+  }
+
+  .header-cta::before {
+    content: "Book";
+    font-size: 0.65rem;
+    letter-spacing: 0.14em;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+  }
+
+  .hero-visual {
+    min-height: 400px;
+    order: 1;
+    background-position: 58% center;
+  }
+
+  .hero-visual::after {
+    background: linear-gradient(180deg, transparent 63%, rgba(22, 47, 88, 0.3));
+    content: "";
+    inset: 0;
+    pointer-events: none;
+    position: absolute;
+  }
+
+  .hero-copy {
+    min-height: 0;
+    order: 2;
+    padding: 54px 22px 62px;
+  }
+
+  .hero-copy .eyebrow {
+    margin-bottom: 24px;
+  }
+
+  h1 {
+    font-size: clamp(3.45rem, 17vw, 4.7rem);
+    line-height: 0.88;
+    margin-bottom: 28px;
+  }
+
+  .hero-intro {
+    font-size: 1rem;
+    line-height: 1.55;
+  }
+
+  .hero-actions {
+    gap: 18px;
+    margin-top: 18px;
+    width: 100%;
+  }
+
+  .hero-actions .button {
+    width: 100%;
+  }
+
+  .hero-actions .text-link {
+    align-self: flex-start;
+    margin-top: 4px;
+  }
+
+  .hero-location {
+    margin-top: 42px;
+  }
+
+  .marquee {
+    padding: 17px 0;
+  }
+
+  .marquee div {
+    gap: 22px;
+    justify-content: flex-start;
+    padding: 0 22px;
+  }
+
+  .section {
+    padding: 72px 22px;
+  }
+
+  .eyebrow {
+    margin-bottom: 25px;
+  }
+
+  .section-heading {
+    margin-bottom: 38px;
+  }
+
+  .section-heading h2,
+  .about h2,
+  .visit h2 {
+    font-size: clamp(2.55rem, 12vw, 3.5rem);
+    line-height: 1;
+  }
+
+  .section-heading > p:last-child {
+    font-size: 1rem;
+    line-height: 1.55;
+    margin-top: 22px;
+  }
+
+  .service-card {
+    min-height: 285px;
+    padding: 24px 22px;
+  }
+
+  .service-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 18px;
+  }
+
+  .service-note {
+    margin-top: 20px;
+  }
+
+  .about-art {
+    min-height: 270px;
+  }
+
+  .about-word {
+    font-size: 5.4rem;
+  }
+
+  .about-copy {
+    padding: 68px 22px 76px;
+  }
+
+  .about-copy > p:not(.eyebrow) {
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+
+  .about-copy .text-link {
+    line-height: 1.5;
+  }
+
+  .testimonial {
+    padding: 76px 22px;
+  }
+
+  .testimonial blockquote {
+    font-size: 2.15rem;
+    line-height: 1.18;
+  }
+
+  .visit {
+    gap: 54px;
+  }
+
+  .visit-heading > p:not(.eyebrow) {
+    font-size: 1rem;
+    margin: 24px 0 28px;
+  }
+
+  .visit-heading .button {
+    width: 100%;
+  }
+
+  .visit-details {
+    gap: 38px;
+  }
+
+  footer {
+    gap: 20px;
+    padding: 44px 22px 52px;
+  }
+
+  .copyright {
+    margin-top: 12px;
+  }
+
+  .mobile-booking {
+    padding: 11px 18px calc(11px + env(safe-area-inset-bottom));
+  }
+
+  .mobile-booking a {
+    min-height: 46px;
+  }
+}
